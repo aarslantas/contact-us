@@ -1,0 +1,50 @@
+%propsForm {
+  font-size: 1.8rem;
+  font-family: inherit;
+
+  border:none;
+  border-bottom:1.5px solid #7E7E7E;
+  padding: 1.2rem 2rem 1.2rem 0;
+  background-color:transparent;
+  display: block;
+
+  text-transform: uppercase;
+  transition:border-bottom-color .1s ease-in-out;
+}
+
+
+.form{
+  min-height: 50%;
+ position: relative;
+
+
+  &__input{
+    @extend %propsForm;
+    margin-bottom: 1rem;
+
+
+    &:focus{
+      outline: none;
+      border-bottom-color:#EA246F ;
+
+    }
+
+
+  }
+
+  &__textarea{
+    @extend %propsForm;
+    min-height: 50%;
+    min-width: 100%;
+    resize: none;
+
+    &:focus{
+      outline: none;
+      border-bottom-color:#EA246F ;
+
+    }
+
+  }
+
+
+}

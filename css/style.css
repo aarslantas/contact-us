@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 67.5%;
+  box-sizing: border-box; }
+
+body {
+  background-color: #EA246F;
+  font-family: "Open Sans"; }
+
+.heading-primary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #EA246F;
+  letter-spacing: .2rem; }
+
+.heading-secondary {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7E7E7E;
+  letter-spacing: 2px; }
+
+.button {
+  font-size: 1.6rem;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 1.2rem;
+  color: #EA246F;
+  display: inline-block;
+  float: right;
+  margin-top: 3rem; }
+
+.form__input, .form__textarea {
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border-bottom: 1.5px solid #7E7E7E;
+  padding: 1.2rem 2rem 1.2rem 0;
+  background-color: transparent;
+  display: block;
+  text-transform: uppercase;
+  transition: border-bottom-color .1s ease-in-out; }
+
+.form {
+  min-height: 50%;
+  position: relative; }
+  .form__input {
+    margin-bottom: 1rem; }
+    .form__input:focus {
+      outline: none;
+      border-bottom-color: #EA246F; }
+  .form__textarea {
+    min-height: 50%;
+    min-width: 100%;
+    resize: none; }
+    .form__textarea:focus {
+      outline: none;
+      border-bottom-color: #EA246F; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.content {
+  width: 70vw;
+  height: 80vh;
+  background-color: #3E3E3E;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  display: flex; }
+  .content__left-side {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around; }
+    .content__left-side span {
+      display: block; }
+      .content__left-side span:last-child {
+        border-bottom: 3px solid #EA246F;
+        padding-bottom: 2px;
+        width: 4rem; }
+  .content__right_side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

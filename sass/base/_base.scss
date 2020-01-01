@@ -1,3 +1,8 @@
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+
+
+
 *,
 *::after,
 *::before{
@@ -7,13 +12,18 @@
 }
 
 html{
-  font-size: 67.5%;
-
+  font-size: 62.5%;
   box-sizing: border-box;
+  font-family: "Open Sans";
+  
+  @media only screen and (max-width: $bp-medium) {
+    font-size:50%;
+    
+  }
 }
 
 body{
 
   background-color: #EA246F;
-  font-family: "Open Sans";
+
 }

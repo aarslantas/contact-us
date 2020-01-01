@@ -14,7 +14,12 @@
 
   display: flex;
 
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+  }
 
     &__left-side{
       width: 50%;
@@ -24,9 +29,24 @@
       align-items: center;
       justify-content: space-around;
 
+      @media only screen and (max-width: $bp-small) {
+        width: 70%;
+        flex-flow: row;
+        flex-wrap: wrap;
+
+
+      }
+
+
+
 
       span{
         display: block;
+
+        @media only screen and (max-width: 600px) {
+          display: inline-block;
+
+        }
 
 
         &:last-child{
@@ -48,6 +68,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+
     }
 
 

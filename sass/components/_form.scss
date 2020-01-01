@@ -10,12 +10,25 @@
 
   text-transform: uppercase;
   transition:border-bottom-color .1s ease-in-out;
+
+
 }
+
+
+%focus{
+  outline: none;
+  border-bottom-color:#ddd ;
+  color: #ddd;
+
+}
+
 
 
 .form{
   min-height: 50%;
  position: relative;
+
+
 
 
   &__input{
@@ -24,8 +37,13 @@
 
 
     &:focus{
-      outline: none;
-      border-bottom-color:#EA246F ;
+    @extend %focus;
+
+
+    }
+
+    &:not(:focus){
+      color: #e6e6e6;
 
     }
 
@@ -39,8 +57,10 @@
     resize: none;
 
     &:focus{
-      outline: none;
-      border-bottom-color:#EA246F ;
+      @extend %focus;
+    }
+    &:not(:focus){
+      color: #e6e6e6;
 
     }
 

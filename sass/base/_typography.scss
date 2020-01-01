@@ -3,6 +3,12 @@
   text-transform:uppercase;
   color: #EA246F;
   letter-spacing: .2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size:2.5rem;
+
+  }
+
 }
 
 .heading-secondary{
@@ -10,6 +16,7 @@
   font-weight: 700;
   text-transform:uppercase;
   color: #7E7E7E;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+
 
 }

@@ -1,17 +1,29 @@
 .button{
+  &,
+  &:visited,
+  &:link {
+    font-size: 1.6rem;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 1.2rem;
+    color: #EA246F;
+    display: inline-block;
+    float: right;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    outline: none;
+  }
 
-  font-size: 1.6rem;
-  border: none;
-  font-family: inherit;
-  text-transform: uppercase;
-  background-color: transparent;
-  padding: 1.2rem;
-  color:#EA246F;
-  display: inline-block;
-  float: right;
-  margin-top: 3rem;
 
-
+  &:active,
+  &:hover{
+  background: transparent;
+  outline: none;
+  color: #ddd;
+  cursor: pointer;
+  }
 
 
 
